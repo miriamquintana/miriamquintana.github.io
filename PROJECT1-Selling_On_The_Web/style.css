@@ -1,0 +1,57 @@
+
+body {
+  background-color: #fff8dc; /* cornsilk */
+  color: #333;
+  font-family: Georgia, serif;
+  cursor: url('mug-cursor.cur'), url('mug-cursor.png') 15 16, auto; /* custom mug cursor with fallback */
+
+  /* Center everything horizontally + vertically */
+  display: flex;
+  flex-direction: column;   /* keeps content stacked top to bottom */
+  justify-content: center;  /* vertical centering */
+  align-items: center;      /* horizontal centering */
+  min-height: 100vh;        /* take up full viewport height */
+  text-align: center;       /* center text content */
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: "Trebuchet MS", sans-serif;
+  color: #2c2c54;
+}
+
+#mainTitle {
+  color: #8b4513; /* nice brown */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+img {
+  border: 3px solid #888;
+  border-radius: 8px;
+  padding: 5px;
+  cursor: zoom-in; /* zoom effect for product images */
+  display: block;
+  margin: 0 auto; /* centers images */
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  color: #0056b3;
+  text-decoration: none;
+  cursor: pointer; /* hand icon for links */
+}
+
+a:hover {
+  color: #8b0000;
+  text-decoration: underline;
+}
+
+li {
+  cursor: grab; /* playful for list items */
+  list-style-position: inside; /* keeps bullets aligned while centered */
+  text-align: center;
+}

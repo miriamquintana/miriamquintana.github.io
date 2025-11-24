@@ -1,0 +1,123 @@
+/* Global styles */
+body {
+  background-color: #FFE2D4;
+  font-family: 'Newsreader', serif;
+  color: #404932;
+  margin: 0;
+  line-height: 1.8;
+}
+
+/* Center content with generous margins */
+main, header, footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 60px;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Mynerve', cursive;
+  margin-bottom: 20px;
+}
+h1, h2 {
+  color: #EE8D6D;
+  font-size: 30px;
+}
+h3 {
+  color: #9AA1B1;
+}
+
+h1 {font-size: 50px}
+
+/* Header */
+header {
+  text-align: center;
+  font-size: 20px;
+}
+/* Navigation */
+nav {
+  margin-top: 40px;
+}
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #404932;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #ECB8CE;
+  text-decoration: underline;
+}
+
+/* Homepage img */
+.image-center img {
+  max-width: 600px;  /* or 500px, depending on the look?? idk */
+  height: auto;
+  display: block;
+  margin: 20px auto; /* keeps it centered */
+}
+
+/* Floating image box */
+.float-box {
+  float: left;
+  margin: 0 30px 20px 0;
+}
+.float-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+/* Forms */
+form {
+  margin: 40px 0;
+}
+button {
+  background-color: #EE8D6D;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+button:hover {
+  background-color: #ECB8CE;
+}
+
+/*Contact image*/
+/* Contact form + image side by side */
+.contact-container {
+  display: flex;
+  align-items: flex-start; /* aligns top edges */
+  justify-content: space-between;
+  gap: 40px; /* space between form and image */
+  margin-top: 30px;
+}
+
+.contact-container form {
+  flex: 1; /* form takes avail space */
+}
+
+.contact-container img {
+  max-width: 300px; /* keeps image smaller */
+  height: auto;
+  border-radius: 8px;
+}
+
+.price {
+  color: #EE8D6D;       /* soft pink highlight */
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 40px;
+  border-top: 1px solid #9AA1B1;
+  padding-top: 20px;
+}

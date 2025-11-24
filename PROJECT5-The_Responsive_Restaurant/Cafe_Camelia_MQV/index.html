@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Café Camelia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Café Camelia serves Puerto Rican coffee, house-made syrups, and fresh pastries inspired by island traditions.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Head-->
+  <header class="hero-header" role="banner">
+    <div class="brand-wrap">
+      <h1 class="brand-title" aria-label="Café Camelia">Café Camelia</h1>
+      <hr class="brand-rule" aria-hidden="true">
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- INTRO (not for phone -->
+    <section id="about" class="intro" aria-label="Introduction to Café Camelia">
+      <div class="intro-media">
+        <img src="cafe-camelia-indoors.jpg" alt="Cozy interior of Café Camelia with plants and pastries">
+      </div>
+      <div class="intro-text">
+        <h2>Welcome to Café Camelia</h2>
+        <p>We brew Puerto Rican coffee sourced directly from farmers on the island. Our pastries are baked in-house and inspired by classic favorites like quesitos, polvorones, pastelillos de guayaba, and mallorcas.</p>
+        <p>We make our own syrups from real ingredients, including flavors rooted in Puerto Rican traditions such as coquito and maví, along with local tastes like tamarind and coconut.</p>
+      </div>
+    </section>
+
+    <!-- laptop view: intro + galeria-->
+    <section class="popular" aria-label="Popular Right Now">
+    <header class="section-header">
+        <h2>Popular Right Now</h2>
+        <p class="section-kicker">Seasonal offerings and guest favorites</p>
+      </header>
+
+      <div class="popular-grid">
+        <figure class="card pop-card">
+          <img src="coquito-latte.jpg" alt="Coquito latte with cinnamon"
+               data-title="Coquito Latte"
+               data-desc="Espresso, coconut, cinnamon, and house coquito-inspired syrup topped with nutmeg.">
+          <figcaption>Coquito Latte</figcaption>
+        </figure>
+
+        <figure class="card pop-card">
+          <img src="pastelillos-guayaba.jpg" alt="Pastelillos de guayaba pastry"
+               data-title="Pastelillos de Guayaba"
+               data-desc="Flaky pastry filled with sweet guava paste, baked fresh every morning.">
+          <figcaption>Pastelillos de Guayaba</figcaption>
+        </figure>
+
+        <figure class="card pop-card">
+          <img src="hibiscus-tamarind.jpg" alt="Tamarind and hibiscus refresher with ice"
+               data-title="Tamarind &amp; Hibiscus Refresher"
+               data-desc="House-brewed hibiscus with tamarind and citrus. Bright and aromatic.">
+          <figcaption>Tamarind &amp; Hibiscus Refresher</figcaption>
+        </figure>
+
+        <figure class="card pop-card">
+          <img src="chocolate-cortes.jpg" alt="Thick hot chocolate in a mug"
+               data-title="Chocolate Cortés Hot Chocolate"
+               data-desc="Rich Puerto Rican chocolate, steamed to a silky finish. Whipped cream optional.">
+          <figcaption>Chocolate Cortés Hot Chocolate</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- TABLET!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!      togo here  -->
+ <section class="menu-list" aria-label="Menu Items With Descriptions">  
+      <article class="item">
+        <img src="coquito-latte.jpg" alt="Coquito latte">
+        <div class="item-body">
+          <h3>Coquito Latte</h3>
+          <p>Espresso with coconut and cinnamon, sweetened with our coquito-inspired syrup.</p>
+        </div>
+      </article>
+
+      <article class="item">
+        <img src="pastelillos-guayaba.jpg" alt="Pastelillos de guayaba">
+        <div class="item-body">
+          <h3>Pastelillos de Guayaba</h3>
+          <p>Buttery pastry with guava filling, finished with a light sugar dusting.</p>
+        </div>
+      </article>
+
+  <article class="item">
+        <img src="hibiscus-tamarind.jpg" alt="Tamarind and hibiscus refresher">
+        <div class="item-body">
+          <h3>Tamarind &amp; Hibiscus Refresher</h3>
+          <p>Hibiscus tea, tamarind, and citrus. Served chilled and lightly sweetened.</p>
+        </div>
+      </article>
+
+   
+   
+      <article class="item">
+        <img src="chocolate-cortes.jpg" alt="Chocolate Cortés hot chocolate">
+        <div class="item-body">
+          <h3>Chocolate Cortés Hot Chocolate</h3>
+          <p>Classic island hot chocolate made thick and velvety.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Phone only direction   -->
+    <section class="directions" aria-label="Directions">
+   <h2>Directions</h2>
+      <p>Find us at <strong>245 Allen Street, State College, PA 16801</strong>. From College Avenue, turn north onto Allen Street. We are next to the bookstore with the green awning and plant wall.</p>
+      <img class="map" src="map.jpg" alt="Small map to Café Camelia">
+    </section>
+  </main>
+
+  <!-- FOOTs  -->
+  <footer class="site-footer" role="contentinfo" aria-label="Café Information">
+    
+    <div class="footer-inner">
+      <section class="footer-section footer-address">
+        <h3>Address</h3>
+        <p>245 Allen Street<br>State College, PA 16801</p>
+      </section>
+
+      <section class="footer-section footer-blurb">
+        <h3>About Our Café</h3>
+        <p>Café Camelia features Puerto Rican coffee, house-made syrups, and pastries made from scratch with island inspiration.</p>
+      </section>
+
+      <section class="footer-section" id="contact">
+        <h3>Contact</h3>
+        <p><a href="tel:+18145551234">(814) 555-1234</a><br>
+           <a href="mailto:hello@cafecamelia.example">hello@cafecamelia.example</a></p>
+        <p>Open daily: 7:00 AM – 6:00 PM</p>
+      </section>
+    </div>
+  </footer>
+
+  <!-- bono -->
+ <div class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <img class="lightbox-img" alt="">
+    <div class="lightbox-text">
+      <h3 class="lightbox-title"></h3>
+      <p class="lightbox-desc"></p>
+    </div>
+ </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+/* Google fonts imports*/
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Montserrat:wght@400;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap');
+
+/* css */
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: #000;
+  color: #fff;                    
+  font-family: "Source Serif 4", serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* type+ font */
+h1 { 
+  font-family: "Barriecito", system-ui, sans-serif;
+  margin: 0;
+}
+h2, h3 {
+  font-family: "Montserrat", system-ui, sans-serif;
+  margin: 0.75rem 0;
+}
+h2 { color: #72efdd; }
+p { margin: 0.5rem 0; }
+
+/* Header + Navi */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid #222;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+}
+.site-nav a {
+  color: #ffe74c;
+  text-decoration: none;
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+.site-nav a:hover { 
+  text-decoration: underline;
+}
+
+/* HERO sect */
+header + h2 {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 64px 24px;
+  margin: 0 0 12px;
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      #fb5607 0%,
+      #8b0000 0%,
+      #000000 99%,
+      #000000 100%
+    );
+  border-top: 1px solid #0f0f0f;
+  border-bottom: 1px solid #0f0f0f;
+}
+
+
+main { padding: 20px 24px; }
+
+/* Featured albums (Flexbox goes here)   */
+.featured-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+   justify-content: space-between;
+  align-items: stretch;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+/* cards */
+.album-card {
+  flex: 1 1 180px;
+  max-width: 240px;
+  padding: 16px;
+  border-radius: 14px;
+  color: #000;
+  position: relative;         
+  overflow: hidden;            
+  background:
+    radial-gradient(circle at 40% 40%, rgba(255,255,255,0.3), transparent 60%),
+    conic-gradient(
+       from 210deg at 60% 40%,
+     #fb5607 0 30%,
+      #72efdd 30% 60%,
+      #ffe74c 60% 85%,
+     #fb5607 85% 100%
+    );
+  background-blend-mode: screen;
+  filter: saturate(120%) contrast(105%);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  transform: translateY(0) scale(1);
+  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+  will-change: transform;
+}
+
+.album-card::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  background:
+    conic-gradient(
+      from 210deg at 60% 40%,
+      #fb5607 0 30%,
+      #72efdd 30% 60%,
+      #ffe74c 60% 85%,
+      #fb5607 85% 100%
+    ),
+    radial-gradient(120% 140% at 20% 20%, rgba(114,239,221,0.55), transparent 90%),
+    radial-gradient(120% 140% at 80% 80%, rgba(255,231,76,0.55), transparent 60%);
+  filter: blur(20px) saturate(1.05);
+  opacity: 1;
+  z-index: 0;
+  pointer-events: none;
+}
+.album-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.album-card .album-title { 
+  font-family: "Montserrat", system-ui, sans-serif; 
+  font-weight: 700; 
+  margin: 0 0 4px; 
+}
+.album-card .album-artist { 
+  font-family: "Source Serif 4", serif; 
+  font-weight: 600; 
+}
+
+
+.album-card:hover {
+  transform: translateY(8px) scale(1.08);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.6);
+  filter: brightness(1.03);
+}
+
+/* Inventario */
+.inventory {
+  width: 100%;
+  border-collapse: separate;  /* to fix */
+  border-spacing: 0;          
+  margin: 40px auto;          
+ 
+  padding: 24px;              
+  background-color: rgba(255,255,255,0.02);
+  border-radius: 8px;
+}
+.inventory th, .inventory td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #222;
+  text-align: left;
+}
+.inventory th {
+  color: #fb5607;
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-weight: 700;
+}
+.inventory tbody tr:nth-child(even) {
+  background: rgba(255,255,255,0.03);
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 24px;
+  padding: 16px 24px;
+  background: #72efdd;
+  border-top: 1px solid #222;
+  color: #000000;
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/*Bono*/
+.album-extra {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  color: #fff;
+  background: linear-gradient(to top, rgba(0,0,0,0.78), rgba(0,0,0,0.35));
+  backdrop-filter: blur(4px);
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 160ms ease, transform 160ms ease;
+  pointer-events: none; /* overlay not alter hover */
+}
+
+.album-card:hover .album-extra {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*  ABOUT  PG CSS  */
+
+/* UPDATED: wide*/
+.about-main { 
+  padding: 0 40px 40px;   
+  max-width: 1000px;     
+  margin: 0 auto;        
+}
+
+.about-float {
+  float: right;              
+  width: 40%;
+  margin: 0 0 16px 24px;     
+  position: relative;        
+  background: rgba(255,255,255,0.02);
+  border: 1px solid #222;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.about-float img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.about-float figcaption {
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-size: 0.95rem;
+  color: #bbb;
+  padding: 8px 10px;
+  border-top: 1px solid #222;
+}
+
+.about-badge {
+  position: absolute;        
+  top: 10px;
+  right: 10px;
+  background: #ffe74c;
+  color: #000;
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 6px 10px;
+  border-radius: 999px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.35); }
+
+.about-intro p { 
+  margin: 0 0 1rem; 
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;}
+
+@media (max-width: 800px) {
+  .about-float {
+    float: none;
+    width: 100%;
+    margin: 0 0 16px 0;
+  }
+}

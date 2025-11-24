@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Partner Lab 2: An interactive website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- ref 4 css here -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <h1>Hello, User!</h1>
+    <p>Welcome to your customizable page! Enter a message in the box below. Watch what happens next!</p>
+
+    <h2>Customize Your Page</h2>
+    <div class="card">
+      <form id="customizeForm">
+        <label for="nameInput">Enter your name:</label><br>
+        <input type="text" id="nameInput" name="nameInput" placeholder="Your name"><br><br>
+
+        <label for="messageInput">Enter a message:</label><br>
+        <input type="text" id="messageInput" name="messageInput" placeholder="Your message"><br><br>
+
+        <label for="bgSelect">Choose a background color:</label><br>
+        <select id="bgSelect" name="bgSelect">
+          <option value="">--Select a color--</option>
+
+          <!-- og color - add more ltr? -->
+          <option value="lightyellow">Light Yellow</option>
+          <option value="lavender">Lavender</option>
+          <option value="honeydew">Honeydew</option>
+          <option value="mistyrose">Misty Rose</option>
+
+          <!-- more color -->
+          <option value="cornsilk">Cornsilk</option>
+          <option value="seashell">Seashell</option>
+          <option value="mintcream">Mint Cream</option>
+       
+          <option value="oldlace">Old Lace</option>
+          <option value="lightpink">Light Pink</option>
+          <option value="palegoldenrod">Pale Goldenrod</option>
+          <option value="papayawhip">Papaya Whip</option>
+          <option value="peachpuff">Peach Puff</option>
+          <option value="powderblue">Powder Blue</option>
+          <option value="thistle">Thistle</option>
+          <option value="snow">Snow</option>
+        </select><br><br>
+
+        <button type="submit" id="applyBtn">Apply My Changes!</button>
+      </form>
+    </div>
+
+    <!-- bonus -->
+    <h2>To-Do List</h2>
+    <div class="card">
+      <form id="todoForm" onsubmit="return false;">
+        <label for="todoInput">Add a to-do item:</label><br>
+        <input type="text" id="todoInput" placeholder="Example: Feed my 3 cats"><br><br>
+        <button type="button" id="addTodoBtn" class="ghost-btn">Add To-Do</button>
+      </form>
+
+      <!-- Ordered -->
+      <ol id="todoList"></ol>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© Miriam "Mimi" Quintana Vargas .</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
